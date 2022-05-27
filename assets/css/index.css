@@ -1,0 +1,73 @@
+.layui-footer {
+    text-align: center;
+}
+
+.iconfont {
+    margin-right: 8px;
+}
+
+.layui-icon {
+    margin-left: 20px;
+    margin-right: 8px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.layui-body {
+    overflow: hidden;
+}
+
+a {
+    transform: none;
+}
+
+.userinfo {
+    height: 60px;
+    user-select: none;
+    text-align: center;
+    line-height: 60px;
+    /* background-color: #fff; */
+    font-size: 12px;
+    border-bottom: 1px solid #242726;
+}
+
+.userinfo .layui-nav-img {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.text-top-avatar {
+    position: absolute;
+    top: 10px;
+    left: -25px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #009688;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.text-avatar {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #009688;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+#welcome {
+    margin-left: 40px;
+}
