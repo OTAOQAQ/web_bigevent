@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/assets/css/article/art_cate.css">
+</head>
+
+<body>
+
+    <div class="layui-card">
+        <div class="layui-card-header">
+            <span>文章类别管理</span>
+            <button type="button" class="layui-btn layui-btn-normal layui-btn-sm addCate">添加类别</button>
+        </div>
+        <div class="layui-card-body">
+            <table class="layui-table">
+
+                <colgroup>
+                    <col />
+                    <col />
+                    <col width="200" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>分类名称</th>
+                        <th>分类别名</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 添加文章类别 -->
+    <script type="text/html" id="add_cate">
+        <form class="layui-form" id="add_cate_form">
+            <div class="layui-form-item">
+                <label class="layui-form-label">分类名称</label>
+                <div class="layui-input-block">
+                    <input type="text" name="name" id="text_name" required lay-verify="required" placeholder="请输入分类名称" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">分类别名</label>
+                <div class="layui-input-block">
+                    <input type="text" name="alias" id="alias" required lay-verify="required" placeholder="请输入分类别名" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="formDemo">确认添加</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </form>
+    </script>
+
+    <!-- 编辑修改文章类别名称 -->
+    <script type="text/html" id="edit_cate">
+        <form class="layui-form" id="edit_cate_form" lay-filter="form-edit">
+            <input type="hidden" name="Id" id="id">
+            <div class="layui-form-item">
+                <label class="layui-form-label">原分类名称</label>
+                <div class="layui-input-block">
+                    <input type="text" name="name" id="text_name" required lay-verify="required" placeholder="请输入原分类名称" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">原分类别名</label>
+                <div class="layui-input-block">
+                    <input type="text" name="alias" id="alias" required lay-verify="required" placeholder="请输入原分类别名" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="formDemo">确认修改</button>
+                </div>
+            </div>
+        </form>
+    </script>
+    <script src="/assets/lib/jquery.js"></script>
+    <script src="/assets/js/API.js"></script>
+    <script src="/assets/lib/layui/layui.all.js"></script>
+    <script src="../assets/js/article/art_cate.js"></script>
+</body>
+
+</html>

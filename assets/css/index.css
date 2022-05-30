@@ -35,6 +35,9 @@ a {
 }
 
 .userinfo .layui-nav-img {
+    position: absolute;
+    top: 10px;
+    left: 36px;
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -43,7 +46,7 @@ a {
 .text-top-avatar {
     position: absolute;
     top: 10px;
-    left: -25px;
+    left: 18px;
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -59,6 +62,7 @@ a {
     top: 10px;
     left: 40px;
     display: inline-block;
+    /* display: none; */
     width: 40px;
     height: 40px;
     line-height: 40px;
