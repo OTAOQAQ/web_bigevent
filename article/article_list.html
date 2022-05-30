@@ -37,8 +37,8 @@
                 <colgroup>
                     <col />
                     <col width="150">
-                    <col width="150">
                     <col width="180">
+                    <col width="150">
                     <col width="150">
                 </colgroup>
                 <thead>
@@ -55,8 +55,27 @@
                 </tbody>
             </table>
             <!--分页区域  -->
+            <div id="pagebox"></div>
+
         </div>
     </div>
+
+    <!-- 列表数据的模板引擎 -->
+    <script type="text/html" id="tpl-table">
+        {{each data}}
+        <tr>
+            <td>{{$value.title}}</td>
+            <td>{{$value.cate_name}}</td>
+            <td>{{$value.pub_date|dataFormat}}</td>
+            <td>{{$value.state}}</td>
+            <td>
+                <button type="button" class="layui-btn layui-btn-xs">编辑</button>
+                <button type="button" class="layui-btn layui-btn-danger layui-btn-xs btn-delete" data-id="{{$value.Id}}">删除</button>
+            </td>
+        </tr>
+        {{/each}}
+    </script>
+
 
     <script type="text/html" id="tpl-cate">
         <option value="">所有分类</option>
